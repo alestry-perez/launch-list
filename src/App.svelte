@@ -1,31 +1,30 @@
 <script>
-	let title='Launch List';
+	let title='Upcoming Launches';
 </script>
 
 <main>
-	<h1>{title}!</h1>
-	<p>Something <a href="https://svelte.dev/tutorial">should go here</a> for the project.</p>
-	<h3 class='bg-blue-100'>Tailwind Test</h3>
+	<div class='container px-4 mx-auto'>
+		<h1 class='text-5xl'>{title}!</h1>
+		<br>
+		<div class='box-border w-3/4 h-48 max-h-full p-4 border-4 rounded-md shadow-md'>
+			<img src="" alt="">
+			<div class='launch header'>
+				<h3>Card Title</h3>
+				<div>
+					<span>Badge Here</span>
+				</div>
+				<div class='card text'>
+					<h6>Launch Company</h6>
+					<h6>Launch Location</h6>
+				</div>
+				<div class='count down'></div>
+				<h5>Date</h5>
+			</div>
+			
+		</div>
+	</div>
+	
 </main>
 
 <style>
-	main {
-		text-align: center;
-		padding: 1em;
-		max-width: 240px;
-		margin: 0 auto;
-	}
-
-	h1 {
-		color: #ff3e00;
-		text-transform: uppercase;
-		font-size: 4em;
-		font-weight: 100;
-	}
-
-	@media (min-width: 640px) {
-		main {
-			max-width: none;
-		}
-	}
 </style>
