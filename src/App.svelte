@@ -5,6 +5,7 @@
 <main>
 	<h1>Hello {name}!</h1>
 	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
+	<h3 class='bg-blue-100'>Tailwind Test</h3>
 </main>
 
 <style>
