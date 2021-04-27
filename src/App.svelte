@@ -1,10 +1,10 @@
 <script>
-	export let name;
+	let title='Launch List';
 </script>
 
 <main>
-	<h1>Hello {name}!</h1>
-	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
+	<h1>{title}!</h1>
+	<p>Something <a href="https://svelte.dev/tutorial">should go here</a> for the project.</p>
 	<h3 class='bg-blue-100'>Tailwind Test</h3>
 </main>
 
