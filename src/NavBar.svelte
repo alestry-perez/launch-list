@@ -6,9 +6,5 @@
     <div class="mb-2 sm:mb-0">
       <a href="/home" class="text-2xl no-underline text-grey-darkest hover:text-blue-dark">Upcoming Rocket Launches</a>
     </div>
-    <div>
-      <a href="/#" class="ml-2 text-lg no-underline text-grey-darkest hover:text-blue-dark">One</a>
-      <a href="/#" class="ml-2 text-lg no-underline text-grey-darkest hover:text-blue-dark">Two</a>
-      <a href="/#" class="ml-2 text-lg no-underline text-grey-darkest hover:text-blue-dark">Three</a>
-    </div>
+    
   </nav>
