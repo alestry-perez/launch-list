@@ -5,24 +5,24 @@
    export let countdown;
    export let date;
    export let time;
-   export let status;
-   export let image;
+   export let rocketStatus;
+   export let rocketImage;
 </script>
 
 
 <!-- Start of component -->
-<div class="w-6/12 p-3 ">
-   <div class="flex overflow-hidden bg-white rounded-lg shadow-lg">
-     <div class="w-1/3 bg-no-repeat bg-cover " style="background-image: url('{image}')">
+<div class="p-3 ">
+   <div class="flex w-auto overflow-hidden bg-white rounded-lg shadow-lg h-60">
+     <div class="w-1/3 bg-center bg-no-repeat bg-cover " style="background-image: url({rocketImage})">
      </div> 
-     <div class="w-2/3 p-4">
+     <div class="w-2/3 p-4 md:text-lg">
       <div id="body" class="flex flex-col ml-5">
          <h4 id="name" class="mb-2 text-5xl font-semibold text-center">{launchTitle}</h4>
          <div class="flex justify-center">
-            <span alt="avatar" class="flex items-center justify-center px-3 py-3 m-2 text-white bg-green-500 rounded-full justify-self-center">{status}</span>
+            <span alt="avatar" class="flex items-center justify-center px-3 py-3 m-2 text-white bg-green-500 rounded-full justify-self-center">{rocketStatus}</span>
             </div>
          <div id="launchInformation" class='mb-5'>
-            <h6 class='text-4xl text-center'>{organization}</h6>
+            <h6 class='text-3xl text-center'>{organization}</h6>
             <h6 class='text-2xl text-center'>{launchPadLocation}</h6>
          </div>
          <div id="launchTime" class='mb-5'>
