@@ -15,8 +15,8 @@
 	
 </script>
 
-<main class='bg-gray-200'>
-	<NavBar class='block'/>
+<main>
+	<NavBar/>
 	<div class="grid grid-flow-col grid-rows-4 gap-2 h-3/6">
 		{ #each events as {name, image, pad, net, launch_service_provider, status} }
 			<Card
@@ -31,5 +31,5 @@
 			/>
 		{ /each }
 	</div>
-	<Footer class='block'/>
+	<Footer/>
 </main>
