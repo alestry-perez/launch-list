@@ -25,7 +25,7 @@
 		rocketStatus={status.abbrev}
 		organization={launch_service_provider.name}
 		launchPadLocation={pad.name} 
-		countdown='#'
+		countdown='T? --:--:--'
 		date={convertDate(net)}
 		time='#'
 		/>
