@@ -1,4 +1,6 @@
 <script>
+
+
    export let launchTitle;
    export let organization;
    export let launchPadLocation;
@@ -8,7 +10,6 @@
    export let rocketStatus;
    export let rocketImage;
 </script>
-
 
 <!-- Start of component -->
 <div>

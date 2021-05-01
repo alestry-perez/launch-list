@@ -1,8 +1,10 @@
 <script>
 	import { onMount } from 'svelte'
+
 	import Card from './Card.svelte';
 	import NavBar from './NavBar.svelte';
 	import Footer from './Footer.svelte';
+
 	import { getData } from './launchAPI.svelte'
 	import { convertDate } from './DateConverter.svelte'
 	
@@ -13,7 +15,7 @@
 	onMount(async()=>{
 		events = await getData();
 	})
-	
+
 </script>
 
 <NavBar/>
@@ -27,9 +29,19 @@
 		launchPadLocation={pad.name} 
 		countdown='T? --:--:--'
 		date={convertDate(net)}
-		time='#'
+		time='13:00'
 		/>
 	{ /each }
+	<Card
+		rocketImage='https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.2Xm3rl9hHe15FCosDQb1JwHaMC%26pid%3DApi&f=1'
+		launchTitle='Launch Title'
+		rocketStatus='Go'
+		organization='SpaceX'
+		launchPadLocation='39A'
+		countdown='T? --:--:--'
+		date='01/01/2021'
+		time='13:00 hr'
+		/>
 </div>
 <Footer/>
 

@@ -6,7 +6,7 @@
   const countDownDate = new Date({ timeFromApi }).getTime();
 
   // Update the count down every 1 second
-  export const CountDownTime = setInterval(function () {
+   const CountDownTime = setInterval(function () {
     // Get today's date and time
     let now = new Date().getTime();
 
