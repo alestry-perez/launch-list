@@ -18,7 +18,7 @@
 		events = await getData();
 	})
    
-   //$: console.log(jsonResponse.net);
+   $: console.log();
 </script>
 
 <!-- Start of component -->
@@ -38,8 +38,9 @@
          </div>
          <div id="launchTime">
             <Countdown 
-            from=''
+            from={events.net}
             dateFormat="YYYY-MM-DD HH:mm:ss" 
+            zone="Europe/Athens"
             let:remaining>
                <div id='countdownTimer' class="flex flex-row justify-center space-x-3 text-3xl text-center text-gray-800">
                   {#if remaining.done === false}

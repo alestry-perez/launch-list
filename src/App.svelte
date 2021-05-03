@@ -13,8 +13,6 @@
 	onMount(async()=>{
 		events = await getData();
 	})
-
-	//$: console.log(convertTime);
 </script>
 
 <NavBar/>
