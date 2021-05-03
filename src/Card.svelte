@@ -1,6 +1,4 @@
 <script>
-
-
    export let launchTitle;
    export let organization;
    export let launchPadLocation;

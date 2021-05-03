@@ -6,8 +6,7 @@
 	import Footer from './Footer.svelte';
 
 	import { getData } from './launchAPI.svelte'
-	import { convertDate } from './DateConverter.svelte'
-	
+	import { convertDate, convertTime} from './DateConverter.svelte'
 	
 	let events =[];
 	//$: console.log(events);
@@ -29,7 +28,7 @@
 		launchPadLocation={pad.name} 
 		countdown='T? --:--:--'
 		date={convertDate(net)}
-		time='13:00'
+		time={convertTime(net)}
 		/>
 	{ /each }
 	<Card
@@ -40,7 +39,7 @@
 		launchPadLocation='39A'
 		countdown='T? --:--:--'
 		date='01/01/2021'
-		time='13:00 hr'
+		time='13:00'
 		/>
 </div>
 <Footer/>

@@ -1,9 +1,7 @@
 <script context="module">
 
-  let timeFromApi;
-
   // Set the date we're counting down to
-  const countDownDate = new Date({ timeFromApi }).getTime();
+  const countDownDate = new Date( 'TIME FROM API HERE' ).getTime();
 
   // Update the count down every 1 second
    const CountDownTime = setInterval(function () {
@@ -20,7 +18,7 @@
     let seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
     // Output the result in an element with id="time"
-    document.getElementById('countdownTimer').innerHTML =
+    document.getElementById( 'ID HERE' ).innerHTML =
       days + 'd ' + hours + 'h ' + minutes + 'm ' + seconds + 's ';
 
     // If the count down is over, write some text
