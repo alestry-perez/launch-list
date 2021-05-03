@@ -3,6 +3,7 @@
 
    import { onMount } from 'svelte';
    import { getData } from './launchAPI.svelte';
+   import { convertDate } from './DateConverter.svelte';
 
    export let launchTitle;
    export let organization;
@@ -38,7 +39,7 @@
          </div>
          <div id="launchTime">
             <Countdown 
-            from={events.net}
+            from={convertDate(events.net)}
             dateFormat="YYYY-MM-DD HH:mm:ss" 
             zone="Europe/Athens"
             let:remaining>
