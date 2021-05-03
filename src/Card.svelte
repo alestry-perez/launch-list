@@ -20,12 +20,30 @@
          <div class="flex justify-center">
             <span alt="Rocket Status" class="flex items-center justify-center h-6 p-2 text-xl text-white bg-green-500 rounded-full justify-self-center">{rocketStatus}</span>
          </div>
-         <div id="launchInformation" class='mb-2'>
+         <div id="launchInformation" class='mb-1'>
             <h6 class='text-base text-center'>{organization}</h6>
             <h6 class='text-base text-center'>{launchPadLocation}</h6>
          </div>
-         <div id="launchTime" class='mb-2'>
-            <h2 id='countdownTimer' class="mt-2 text-center text-gray-800 text-1xl">{countdown}</h2>
+         <div id="launchTime">
+            <h2 id='countdownTimer' class="text-2xl text-center text-gray-800">{countdown}
+            </h2>
+            <!-- <div class='flex flex-row justify-center space-x-4'>
+               <p class='text-sm text-center'> T- </p>
+               <p class='text-sm text-center'></p>
+               <span> : </span>
+               <p class='text-sm text-center'></p>
+               <span> : </span>
+               <p class='text-sm text-center'></p>
+               <span> : </span>
+               <p class='text-sm text-center'></p>
+            </div> -->
+            <div class='flex flex-row justify-center space-x-4'>
+               <p class='text-sm text-center'>Days</p>
+               <p class='text-sm text-center'>Hours</p>
+               <p class='text-sm text-center'>Minutes</p>
+               <p class='text-sm text-center'>Seconds</p>
+            </div>
+            
          </div>
          <div id='date' class='mb-2'>
             <h6 class='text-base text-center'>{date}</h6>

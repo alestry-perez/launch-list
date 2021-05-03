@@ -1,4 +1,5 @@
 <script context="module">
+	
     export const convertDate = (dateString) =>{
 		let newDate = new Date(dateString);
 		//console.log(newDate);
@@ -12,7 +13,7 @@
 
 	export const convertTime = (timeString) => {
 		let newTime = new Date(timeString);
-		console.log(newTime);
+		// console.log(newTime);
 		let readableTime = newTime.toLocaleTimeString("en-IN", { 
 			hour12: false, 
 			hour: '2-digit', 

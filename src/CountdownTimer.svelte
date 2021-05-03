@@ -1,31 +1,67 @@
-<script context="module">
+<script context='module'>
+  import {onMount, onDestroy} from "svelte";
 
-  // Set the date we're counting down to
-  const countDownDate = new Date( 'TIME FROM API HERE' ).getTime();
+  export const timeLeft = -1;
+  export const onEnd = () => {
+  };
 
-  // Update the count down every 1 second
-   const CountDownTime = setInterval(function () {
-    // Get today's date and time
-    let now = new Date().getTime();
+  export const displayDays = true;
+  export const displayHours = true;
+  export const displayMinutes = true;
+  export const displaySeconds = true;
 
-    // Find the distance between now and the count down date
-    let distance = countDownDate - now;
+  let timer;
 
-    // Time calculations for days, hours, minutes and seconds
-    let days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    let seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  function formater(tl) {
+      days = ~~(tl / 86400);
+      if (displayDays) tl -= days * 86400;
+      hours = ~~(tl / 3600);
+      if (displayHours) tl -= hours * 3600;
+      minutes = ~~(tl / 60);
+      if (displayMinutes) tl -= minutes * 60;
+      seconds = tl;
 
-    // Output the result in an element with id="time"
-    document.getElementById( 'ID HERE' ).innerHTML =
-      days + 'd ' + hours + 'h ' + minutes + 'm ' + seconds + 's ';
+      if(!displaySeconds && seconds > 0) {
+          minutes++;
+          if(minutes==60) {
+              minutes = 0; hours++;
+          }
+          if(hours==24 && displayDays) {
+              hours = 0;
+              days++;
+          }
+      }
 
-    // If the count down is over, write some text
-    if (distance < 0) {
-      clearInterval(CountDownTime);
-      //document.getElementById('time').innerHTML = 'MISSION SUCCESSFUL!';
-    }
-  }, 1000);
+      if(displayDays)
+          strDays = (days < 10 ? '0' : '') + days + ':';
+      if(displayHours)
+          strHours = (hours < 10 ? '0' : '') + hours + ':';
+      if(displayMinutes)
+          strMinutes = (minutes < 10 ? '0' : '') + minutes + (displaySeconds?':':'');
+      if(displaySeconds)
+          strSeconds = (seconds < 10 ? '0' : '') + seconds;
+  }
+  onMount(() => {
+      timer = setInterval(() => {
+          if (timeLeft > 0) {
+              --timeLeft;
+          } else {
+              clearInterval(timer);
+              onEnd();
+          }
+      }, 1000);
+  });
+  onDestroy(() => {
+      clearInterval(timer);
+  });
+  formater(timeLeft);
+
+  let days = 0, hours = 0, minutes = 0, seconds = 0;
+  let strDays = '', strHours = '', strMinutes = '', strSeconds = '';
+
 </script>
+
+<span>
+  {strDays}{strHours}{strMinutes}{strSeconds}
+</span>
 

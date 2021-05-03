@@ -1,19 +1,21 @@
 <script>
-	import { onMount } from 'svelte'
+	import { onMount } from 'svelte';
 
 	import Card from './Card.svelte';
 	import NavBar from './NavBar.svelte';
 	import Footer from './Footer.svelte';
 
-	import { getData } from './launchAPI.svelte'
-	import { convertDate, convertTime} from './DateConverter.svelte'
+	import { getData } from './launchAPI.svelte';
+	import { convertDate, convertTime} from './DateConverter.svelte';
 	
 	let events =[];
-	//$: console.log(events);
 
 	onMount(async()=>{
 		events = await getData();
 	})
+
+	//Math.ceil((timeEnd.getTime() - (new Date()).getTime())/1000)
+	//$: console.log(convertTime);
 
 </script>
 
@@ -26,7 +28,7 @@
 		rocketStatus={status.abbrev}
 		organization={launch_service_provider.name}
 		launchPadLocation={pad.name} 
-		countdown='T? --:--:--'
+		countdown='T? --:--:--:--'
 		date={convertDate(net)}
 		time={convertTime(net)}
 		/>
@@ -37,7 +39,7 @@
 		rocketStatus='Go'
 		organization='SpaceX'
 		launchPadLocation='39A'
-		countdown='T? --:--:--'
+		countdown='T? --:--:--:--'
 		date='01/01/2021'
 		time='13:00'
 		/>
