@@ -14,9 +14,7 @@
 		events = await getData();
 	})
 
-	//Math.ceil((timeEnd.getTime() - (new Date()).getTime())/1000)
 	//$: console.log(convertTime);
-
 </script>
 
 <NavBar/>
@@ -28,7 +26,6 @@
 		rocketStatus={status.abbrev}
 		organization={launch_service_provider.name}
 		launchPadLocation={pad.name} 
-		countdown='T? --:--:--:--'
 		date={convertDate(net)}
 		time={convertTime(net)}
 		/>

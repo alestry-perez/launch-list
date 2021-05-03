@@ -15,11 +15,13 @@ specifiers:
   rollup-plugin-terser: ^7.0.0
   sirv-cli: ^1.0.0
   svelte: ^3.0.0
+  svelte-countdown: ^1.0.0
   tailwind: ^4.0.0
   tailwindcss: ^2.0.1
 
 dependencies:
   sirv-cli: 1.0.11
+  svelte-countdown: 1.0.0
 
 devDependencies:
   '@rollup/plugin-commonjs': 16.0.0_rollup@2.45.2
@@ -701,6 +703,10 @@ packages:
     resolution: {integrity: sha512-m1WR0xGiC6j6jNFAyW4Nvh4WxAi4JF4w9jRJwSI8nBmNcyZXPcP9VUQG+6gHQXAmqaGEKDKhOqAtENDC941UkA==}
     engines: {node: '>=0.11'}
     dev: true
+
+  /dayjs/1.10.4:
+    resolution: {integrity: sha512-RI/Hh4kqRc1UKLOAf/T5zdMMX5DQIlDxwUe3wSyMMnEbGunnpENCdbUgM+dW7kXidZqCttBrmw7BhN4TMddkCw==}
+    dev: false
 
   /debug/2.6.9:
     resolution: {integrity: sha512-bC7ElrdJaJnPbAP+1EotYvqZsb3ecl5wi6Bfi6BJTUcNowp6cvspg0jXznRTKDjm/E7AdgFBVeAPVMNcKGsHMA==}
@@ -2493,6 +2499,12 @@ packages:
     dependencies:
       has-flag: 4.0.0
     dev: true
+
+  /svelte-countdown/1.0.0:
+    resolution: {integrity: sha512-RuaRjnWPrH7xuwPQwb9b+Ek4mtv3knMTytEqOY2mha152edwDfejjSL+/HvtCbIyuAXPOndaut46dIoeAlPh4A==}
+    dependencies:
+      dayjs: 1.10.4
+    dev: false
 
   /svelte/3.37.0:
     resolution: {integrity: sha512-TRF30F4W4+d+Jr2KzUUL1j8Mrpns/WM/WacxYlo5MMb2E5Qy2Pk1Guj6GylxsW9OnKQl1tnF8q3hG/hQ3h6VUA==}
