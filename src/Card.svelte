@@ -3,7 +3,6 @@
 
    import { onMount } from 'svelte';
    import { getData } from './launchAPI.svelte';
-	import { convertDate, convertTime} from './DateConverter.svelte';
 
    export let launchTitle;
    export let organization;
@@ -13,15 +12,13 @@
    export let rocketStatus;
    export let rocketImage;
 
-   let events =[];
+   let events = [];
 
 	onMount(async()=>{
 		events = await getData();
 	})
-
    
-
- $:console.log(events)
+   //$: console.log(jsonResponse.net);
 </script>
 
 <!-- Start of component -->
@@ -41,7 +38,7 @@
          </div>
          <div id="launchTime">
             <Countdown 
-            from={countdown}
+            from=''
             dateFormat="YYYY-MM-DD HH:mm:ss" 
             let:remaining>
                <div id='countdownTimer' class="flex flex-row justify-center space-x-3 text-3xl text-center text-gray-800">
