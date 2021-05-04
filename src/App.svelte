@@ -36,7 +36,7 @@
 		launchPadLocation='39A'
 		countdown='T? --:--:--:--'
 		date='01/01/2021'
-		time='13:00'
+		time='15:45'
 		/>
 </div>
 <Footer/>
