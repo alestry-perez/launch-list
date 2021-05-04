@@ -19,25 +19,16 @@
 <div class="grid h-auto grid-cols-3 gap-2 pt-5 pb-5">
 	{ #each events as {name, image, pad, net, launch_service_provider, status} }
 		<Card
-		rocketImage={image}
-		launchTitle={name}
-		rocketStatus={status.abbrev}
-		organization={launch_service_provider.name}
-		launchPadLocation={pad.name} 
-		date={convertDate(net)}
-		time={convertTime(net)}
+			rocketImage={image}
+			launchTitle={name}
+			rocketStatus={status.abbrev}
+			organization={launch_service_provider.name}
+			launchPadLocation={pad.name}
+			eventTime={net} 
+			date={convertDate(net)}
+			time={convertTime(net)}
 		/>
 	{ /each }
-	<Card
-		rocketImage='https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.2Xm3rl9hHe15FCosDQb1JwHaMC%26pid%3DApi&f=1'
-		launchTitle='Launch Title'
-		rocketStatus='Go'
-		organization='SpaceX'
-		launchPadLocation='39A'
-		countdown='T? --:--:--:--'
-		date='01/01/2021'
-		time='15:45'
-		/>
 </div>
 <Footer/>
 

@@ -1,10 +1,6 @@
 <script>
    import Countdown from 'svelte-countdown';
 
-   import { onMount } from 'svelte';
-   import { getData } from './launchAPI.svelte';
-   
-
    export let launchTitle;
    export let organization;
    export let launchPadLocation;
@@ -12,14 +8,8 @@
    export let time;
    export let rocketStatus;
    export let rocketImage;
-
-   let events = [];
-
-	onMount(async()=>{
-		events = await getData();
-	})
+   export let eventTime;
    
-   $: console.log(getData(events.net));
 </script>
 
 <!-- Start of component -->
@@ -38,11 +28,10 @@
             <h6 class='text-base text-center'>{launchPadLocation}</h6>
          </div>
          <div id="launchTime">
-            
             <Countdown 
-            from='2022-11-09 09:30:00'
-            dateFormat="YYYY-MM-DD HH:mm:ss" 
-            zone="Europe/Athens"
+            from={eventTime}
+            dateFormat="YYYY-MM-DDTHH:mm:ssZ" 
+            zone="Europe/Stockholm"
             let:remaining>
                <div id='countdownTimer' class="flex flex-row justify-center space-x-3 text-3xl text-center text-gray-800">
                   {#if remaining.done === false}
@@ -59,8 +48,7 @@
                   {/if}
               </div>
             </Countdown>
-            
-            <div class='flex flex-row justify-center space-x-2 pl-11'>
+            <div class='flex flex-row justify-center pl-10 space-x-3'>
                <p class='text-xs text-center'>Days</p>
                <span> </span>
                <p class='text-xs text-center'>Hours</p>
@@ -68,7 +56,7 @@
                <p class='text-xs text-center'>Mins</p>
                <span> </span>
                <p class='text-xs text-center'>Secs</p>
-            </div>  
+            </div>
          </div>
          <div id='date' class='mt-2 mb-2'>
             <h6 class='text-base text-center'>{date}</h6>
