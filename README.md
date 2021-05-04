@@ -13,3 +13,4 @@ Tools Used:
 - Autoprefixer
 - Concurrently
 - Sirv
+- Svelte Countdown https://github.com/rallisf1/svelte-countdown
