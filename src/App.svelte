@@ -13,6 +13,8 @@
 	onMount(async()=>{
 		events = await getData();
 	})
+
+	$: console.log(events)
 </script>
 
 <NavBar/>

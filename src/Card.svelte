@@ -33,29 +33,33 @@
             dateFormat="YYYY-MM-DDTHH:mm:ssZ" 
             zone="Europe/Stockholm"
             let:remaining>
-               <div id='countdownTimer' class="flex flex-row justify-center space-x-3 text-3xl text-center text-gray-800">
+               <div id='countdownTimer' class="grid justify-center grid-cols-8 text-3xl text-center text-gray-800 grid-row-2">
                   {#if remaining.done === false}
                   <h5>T-</h5>
                   <span>{remaining.days}</span>
+                  <p class='text-xs text-center'>Days</p>
                   <span> : </span>
                   <span>{remaining.hours}</span>
+                  <p class='text-xs text-center'>Hours</p>
                   <span> : </span>
                   <span>{remaining.minutes}</span>
+                  <p class='text-xs text-center'>Mins</p>
                   <span> : </span>
                   <span>{remaining.seconds}</span>
+                  <p class='text-xs text-center'>Secs</p>
                   {:else}
                   <h2>LAUNCHED!</h2>
                   {/if}
               </div>
             </Countdown>
-            <div class='flex flex-row justify-center pl-10 space-x-3'>
-               <p class='text-xs text-center'>Days</p>
+            <div class='grid justify-center grid-col-4'>
+               
                <span> </span>
-               <p class='text-xs text-center'>Hours</p>
+               
                <span> </span>
-               <p class='text-xs text-center'>Mins</p>
+               
                <span> </span>
-               <p class='text-xs text-center'>Secs</p>
+               
             </div>
          </div>
          <div id='date' class='mt-2 mb-2'>
