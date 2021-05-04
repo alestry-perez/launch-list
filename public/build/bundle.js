@@ -3068,7 +3068,7 @@ var app = (function () {
     		c: function create() {
     			h2 = element("h2");
     			h2.textContent = "LAUNCHED!";
-    			add_location(h2, file$3, 50, 18, 2097);
+    			add_location(h2, file$3, 50, 18, 2206);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h2, anchor);
@@ -3161,22 +3161,22 @@ var app = (function () {
     			t21 = space();
     			p3 = element("p");
     			p3.textContent = "Secs";
-    			add_location(h5, file$3, 37, 18, 1504);
-    			add_location(span0, file$3, 38, 18, 1534);
-    			attr_dev(p0, "class", "text-xs text-center");
-    			add_location(p0, file$3, 39, 18, 1582);
-    			add_location(span1, file$3, 40, 18, 1640);
-    			add_location(span2, file$3, 41, 18, 1675);
-    			attr_dev(p1, "class", "text-xs text-center");
-    			add_location(p1, file$3, 42, 18, 1724);
-    			add_location(span3, file$3, 43, 18, 1783);
-    			add_location(span4, file$3, 44, 18, 1818);
-    			attr_dev(p2, "class", "text-xs text-center");
-    			add_location(p2, file$3, 45, 18, 1869);
-    			add_location(span5, file$3, 46, 18, 1927);
-    			add_location(span6, file$3, 47, 18, 1962);
-    			attr_dev(p3, "class", "text-xs text-center");
-    			add_location(p3, file$3, 48, 18, 2013);
+    			add_location(h5, file$3, 37, 18, 1517);
+    			add_location(span0, file$3, 38, 18, 1547);
+    			attr_dev(p0, "class", "col-start-2 row-start-2 text-xs text-center");
+    			add_location(p0, file$3, 39, 18, 1595);
+    			add_location(span1, file$3, 40, 18, 1677);
+    			add_location(span2, file$3, 41, 18, 1712);
+    			attr_dev(p1, "class", "col-start-4 row-start-2 text-xs text-center");
+    			add_location(p1, file$3, 42, 18, 1761);
+    			add_location(span3, file$3, 43, 18, 1844);
+    			add_location(span4, file$3, 44, 18, 1879);
+    			attr_dev(p2, "class", "col-start-6 row-start-2 text-xs text-center");
+    			add_location(p2, file$3, 45, 18, 1930);
+    			add_location(span5, file$3, 46, 18, 2012);
+    			add_location(span6, file$3, 47, 18, 2047);
+    			attr_dev(p3, "class", "col-start-8 row-start-2 text-xs text-center");
+    			add_location(p3, file$3, 48, 18, 2098);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h5, anchor);
@@ -3269,7 +3269,7 @@ var app = (function () {
     			if_block.c();
     			attr_dev(div, "id", "countdownTimer");
     			attr_dev(div, "class", "grid justify-center grid-cols-8 text-3xl text-center text-gray-800 grid-row-2");
-    			add_location(div, file$3, 35, 15, 1325);
+    			add_location(div, file$3, 35, 15, 1338);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -3306,16 +3306,16 @@ var app = (function () {
     }
 
     function create_fragment$3(ctx) {
-    	let div8;
+    	let div7;
     	let div0;
     	let t0;
-    	let div7;
     	let div6;
+    	let div5;
     	let h4;
     	let t1;
     	let t2;
     	let div1;
-    	let span0;
+    	let span;
     	let t3;
     	let t4;
     	let div2;
@@ -3325,23 +3325,16 @@ var app = (function () {
     	let h61;
     	let t7;
     	let t8;
-    	let div4;
+    	let div3;
     	let countdown;
     	let t9;
-    	let div3;
-    	let span1;
-    	let t10;
-    	let span2;
-    	let t11;
-    	let span3;
-    	let t12;
-    	let div5;
+    	let div4;
     	let h62;
-    	let t13;
-    	let t14;
+    	let t10;
+    	let t11;
     	let h63;
-    	let t15;
-    	let t16;
+    	let t12;
+    	let t13;
     	let current;
 
     	countdown = new Countdown({
@@ -3363,16 +3356,16 @@ var app = (function () {
 
     	const block = {
     		c: function create() {
-    			div8 = element("div");
+    			div7 = element("div");
     			div0 = element("div");
     			t0 = space();
-    			div7 = element("div");
     			div6 = element("div");
+    			div5 = element("div");
     			h4 = element("h4");
     			t1 = text(/*launchTitle*/ ctx[0]);
     			t2 = space();
     			div1 = element("div");
-    			span0 = element("span");
+    			span = element("span");
     			t3 = text(/*rocketStatus*/ ctx[5]);
     			t4 = space();
     			div2 = element("div");
@@ -3382,104 +3375,85 @@ var app = (function () {
     			h61 = element("h6");
     			t7 = text(/*launchPadLocation*/ ctx[2]);
     			t8 = space();
-    			div4 = element("div");
+    			div3 = element("div");
     			create_component(countdown.$$.fragment);
     			t9 = space();
-    			div3 = element("div");
-    			span1 = element("span");
-    			t10 = space();
-    			span2 = element("span");
-    			t11 = space();
-    			span3 = element("span");
-    			t12 = space();
-    			div5 = element("div");
+    			div4 = element("div");
     			h62 = element("h6");
-    			t13 = text(/*date*/ ctx[3]);
-    			t14 = space();
+    			t10 = text(/*date*/ ctx[3]);
+    			t11 = space();
     			h63 = element("h6");
-    			t15 = text(/*time*/ ctx[4]);
-    			t16 = text("hr");
+    			t12 = text(/*time*/ ctx[4]);
+    			t13 = text("hr");
     			attr_dev(div0, "class", "w-1/3 bg-center bg-no-repeat bg-cover ");
     			set_style(div0, "background-image", "url(" + /*rocketImage*/ ctx[6] + ")");
     			add_location(div0, file$3, 17, 5, 392);
     			attr_dev(h4, "id", "name");
     			attr_dev(h4, "class", "font-semibold text-center text-1xl");
-    			add_location(h4, file$3, 21, 9, 601);
-    			attr_dev(span0, "alt", "Rocket Status");
-    			attr_dev(span0, "class", "flex items-center justify-center h-6 p-1 text-base text-white bg-green-500 rounded-full justify-self-center");
-    			add_location(span0, file$3, 23, 12, 732);
+    			add_location(h4, file$3, 21, 9, 614);
+    			attr_dev(span, "alt", "Rocket Status");
+    			attr_dev(span, "class", "flex items-center justify-center h-6 p-1 text-base text-white bg-green-500 rounded-full justify-self-center");
+    			add_location(span, file$3, 23, 12, 745);
     			attr_dev(div1, "class", "flex justify-center");
-    			add_location(div1, file$3, 22, 9, 686);
+    			add_location(div1, file$3, 22, 9, 699);
     			attr_dev(h60, "class", "text-base text-center");
-    			add_location(h60, file$3, 26, 12, 975);
+    			add_location(h60, file$3, 26, 12, 988);
     			attr_dev(h61, "class", "text-base text-center");
-    			add_location(h61, file$3, 27, 12, 1041);
+    			add_location(h61, file$3, 27, 12, 1054);
     			attr_dev(div2, "id", "launchInformation");
     			attr_dev(div2, "class", "mb-1");
-    			add_location(div2, file$3, 25, 9, 921);
-    			add_location(span1, file$3, 56, 15, 2274);
-    			add_location(span2, file$3, 58, 15, 2320);
-    			add_location(span3, file$3, 60, 15, 2366);
-    			attr_dev(div3, "class", "grid justify-center grid-col-4");
-    			add_location(div3, file$3, 54, 12, 2198);
-    			attr_dev(div4, "id", "launchTime");
-    			add_location(div4, file$3, 29, 9, 1125);
+    			add_location(div2, file$3, 25, 9, 934);
+    			attr_dev(div3, "id", "launchTime");
+    			add_location(div3, file$3, 29, 9, 1138);
     			attr_dev(h62, "class", "text-base text-center");
-    			add_location(h62, file$3, 65, 12, 2487);
+    			add_location(h62, file$3, 56, 12, 2416);
     			attr_dev(h63, "id", "timer");
     			attr_dev(h63, "class", "text-base text-center");
-    			add_location(h63, file$3, 66, 12, 2545);
-    			attr_dev(div5, "id", "date");
-    			attr_dev(div5, "class", "mt-2 mb-2");
-    			add_location(div5, file$3, 64, 9, 2441);
-    			attr_dev(div6, "id", "body");
-    			attr_dev(div6, "class", "flex flex-col ml-5");
-    			add_location(div6, file$3, 20, 6, 549);
-    			attr_dev(div7, "class", "w-2/3 p-2 md:text-lg");
-    			add_location(div7, file$3, 19, 5, 508);
-    			attr_dev(div8, "class", "flex w-auto overflow-hidden bg-white rounded-lg shadow-lg h-60");
-    			add_location(div8, file$3, 16, 3, 310);
+    			add_location(h63, file$3, 57, 12, 2474);
+    			attr_dev(div4, "id", "date");
+    			attr_dev(div4, "class", "grid justify-center grid-cols-2 grid-rows-1 mx-20 mt-3 w-52");
+    			add_location(div4, file$3, 55, 9, 2320);
+    			attr_dev(div5, "id", "body");
+    			attr_dev(div5, "class", "grid justify-center grid-cols-1");
+    			add_location(div5, file$3, 20, 6, 549);
+    			attr_dev(div6, "class", "w-2/3 p-2 md:text-lg");
+    			add_location(div6, file$3, 19, 5, 508);
+    			attr_dev(div7, "class", "flex w-auto overflow-hidden bg-white rounded-lg shadow-lg h-60");
+    			add_location(div7, file$3, 16, 3, 310);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
     		},
     		m: function mount(target, anchor) {
-    			insert_dev(target, div8, anchor);
-    			append_dev(div8, div0);
-    			append_dev(div8, t0);
-    			append_dev(div8, div7);
+    			insert_dev(target, div7, anchor);
+    			append_dev(div7, div0);
+    			append_dev(div7, t0);
     			append_dev(div7, div6);
-    			append_dev(div6, h4);
+    			append_dev(div6, div5);
+    			append_dev(div5, h4);
     			append_dev(h4, t1);
-    			append_dev(div6, t2);
-    			append_dev(div6, div1);
-    			append_dev(div1, span0);
-    			append_dev(span0, t3);
-    			append_dev(div6, t4);
-    			append_dev(div6, div2);
+    			append_dev(div5, t2);
+    			append_dev(div5, div1);
+    			append_dev(div1, span);
+    			append_dev(span, t3);
+    			append_dev(div5, t4);
+    			append_dev(div5, div2);
     			append_dev(div2, h60);
     			append_dev(h60, t5);
     			append_dev(div2, t6);
     			append_dev(div2, h61);
     			append_dev(h61, t7);
-    			append_dev(div6, t8);
-    			append_dev(div6, div4);
-    			mount_component(countdown, div4, null);
-    			append_dev(div4, t9);
-    			append_dev(div4, div3);
-    			append_dev(div3, span1);
-    			append_dev(div3, t10);
-    			append_dev(div3, span2);
-    			append_dev(div3, t11);
-    			append_dev(div3, span3);
-    			append_dev(div6, t12);
-    			append_dev(div6, div5);
-    			append_dev(div5, h62);
-    			append_dev(h62, t13);
-    			append_dev(div5, t14);
-    			append_dev(div5, h63);
-    			append_dev(h63, t15);
-    			append_dev(h63, t16);
+    			append_dev(div5, t8);
+    			append_dev(div5, div3);
+    			mount_component(countdown, div3, null);
+    			append_dev(div5, t9);
+    			append_dev(div5, div4);
+    			append_dev(div4, h62);
+    			append_dev(h62, t10);
+    			append_dev(div4, t11);
+    			append_dev(div4, h63);
+    			append_dev(h63, t12);
+    			append_dev(h63, t13);
     			current = true;
     		},
     		p: function update(ctx, [dirty]) {
@@ -3499,8 +3473,8 @@ var app = (function () {
     			}
 
     			countdown.$set(countdown_changes);
-    			if (!current || dirty & /*date*/ 8) set_data_dev(t13, /*date*/ ctx[3]);
-    			if (!current || dirty & /*time*/ 16) set_data_dev(t15, /*time*/ ctx[4]);
+    			if (!current || dirty & /*date*/ 8) set_data_dev(t10, /*date*/ ctx[3]);
+    			if (!current || dirty & /*time*/ 16) set_data_dev(t12, /*time*/ ctx[4]);
     		},
     		i: function intro(local) {
     			if (current) return;
@@ -3512,7 +3486,7 @@ var app = (function () {
     			current = false;
     		},
     		d: function destroy(detaching) {
-    			if (detaching) detach_dev(div8);
+    			if (detaching) detach_dev(div7);
     			destroy_component(countdown);
     		}
     	};
@@ -3880,7 +3854,7 @@ var app = (function () {
 
     /* src/launchAPI.svelte generated by Svelte v3.37.0 */
 
-    const apiUrl = `https://lldev.thespacedevs.com/2.2.0/launch/upcoming/`;
+    const apiUrl = `https://ll.thespacedevs.com/2.2.0/launch/upcoming/`;
 
     const getData = async () => {
     	try {

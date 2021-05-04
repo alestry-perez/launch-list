@@ -18,7 +18,7 @@
      <div class="w-1/3 bg-center bg-no-repeat bg-cover " style="background-image: url({rocketImage})">
      </div> 
      <div class="w-2/3 p-2 md:text-lg">
-      <div id="body" class="flex flex-col ml-5">
+      <div id="body" class="grid justify-center grid-cols-1">
          <h4 id="name" class="font-semibold text-center text-1xl">{launchTitle}</h4>
          <div class="flex justify-center">
             <span alt="Rocket Status" class="flex items-center justify-center h-6 p-1 text-base text-white bg-green-500 rounded-full justify-self-center">{rocketStatus}</span>
@@ -37,32 +37,23 @@
                   {#if remaining.done === false}
                   <h5>T-</h5>
                   <span>{remaining.days}</span>
-                  <p class='text-xs text-center'>Days</p>
+                  <p class='col-start-2 row-start-2 text-xs text-center'>Days</p>
                   <span> : </span>
                   <span>{remaining.hours}</span>
-                  <p class='text-xs text-center'>Hours</p>
+                  <p class='col-start-4 row-start-2 text-xs text-center'>Hours</p>
                   <span> : </span>
                   <span>{remaining.minutes}</span>
-                  <p class='text-xs text-center'>Mins</p>
+                  <p class='col-start-6 row-start-2 text-xs text-center'>Mins</p>
                   <span> : </span>
                   <span>{remaining.seconds}</span>
-                  <p class='text-xs text-center'>Secs</p>
+                  <p class='col-start-8 row-start-2 text-xs text-center'>Secs</p>
                   {:else}
                   <h2>LAUNCHED!</h2>
                   {/if}
               </div>
             </Countdown>
-            <div class='grid justify-center grid-col-4'>
-               
-               <span> </span>
-               
-               <span> </span>
-               
-               <span> </span>
-               
-            </div>
          </div>
-         <div id='date' class='mt-2 mb-2'>
+         <div id='date' class='grid justify-center grid-cols-2 grid-rows-1 mx-20 mt-3 w-52'>
             <h6 class='text-base text-center'>{date}</h6>
             <h6 id='timer' class='text-base text-center'>{time}hr</h6>
          </div>
