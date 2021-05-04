@@ -19,7 +19,7 @@
 		events = await getData();
 	})
    
-   $: console.log();
+   $: console.log(getData(events.net));
 </script>
 
 <!-- Start of component -->
@@ -54,7 +54,7 @@
                   <span> : </span>
                   <span>{remaining.seconds}</span>
                   {:else}
-                  <!-- <h2>LAUNCHED!</h2> -->
+                  <h2>LAUNCHED!</h2>
                   {/if}
               </div>
             </Countdown>
