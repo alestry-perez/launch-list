@@ -38,8 +38,9 @@
             <h6 class='text-base text-center'>{launchPadLocation}</h6>
          </div>
          <div id="launchTime">
+            
             <Countdown 
-            from={getData(events.net)}
+            from='2022-11-09 09:30:00'
             dateFormat="YYYY-MM-DD HH:mm:ss" 
             zone="Europe/Athens"
             let:remaining>
@@ -58,6 +59,7 @@
                   {/if}
               </div>
             </Countdown>
+            
             <div class='flex flex-row justify-center space-x-2 pl-11'>
                <p class='text-xs text-center'>Days</p>
                <span> </span>
