@@ -48,12 +48,12 @@
                   <span>{remaining.seconds}</span>
                   <p class='col-start-8 row-start-2 text-xs text-center'>Secs</p>
                   {:else}
-                  <h2>LAUNCHED!</h2>
+                  <h2 class='col-start-3 text-center'>LAUNCHED!</h2>
                   {/if}
               </div>
             </Countdown>
          </div>
-         <div id='date' class='grid justify-center grid-cols-2 grid-rows-1 mx-20 mt-3 w-52'>
+         <div id='date' class='grid justify-center grid-cols-2 grid-rows-1 mt-3 mx-14 w-52'>
             <h6 class='text-base text-center'>{date}</h6>
             <h6 id='timer' class='text-base text-center'>{time}hr</h6>
          </div>
