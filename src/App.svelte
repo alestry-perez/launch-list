@@ -14,7 +14,7 @@
 		events = await getData();
 	})
 
-	$: console.log(events)
+	//$: console.log(events)
 </script>
 
 <NavBar/>
