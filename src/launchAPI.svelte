@@ -1,6 +1,6 @@
 <script context="module">
 // Launch Library API https://ll.thespacedevs.com/2.2.0/launch/upcoming/
-const apiUrl = `https://ll.thespacedevs.com/2.2.0/launch/upcoming/`;
+const apiUrl = `https://ll.thespacedevs.com/2.2.0/launch/upcoming/?limit=12&offset=12`;
 
 export const getData = async () => {
   try {
